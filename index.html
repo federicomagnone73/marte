@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>TWIN‑EWC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="splash" class="splash-screen">
+    <svg viewBox="0 0 400 400">
+      <rect width="400" height="400" fill="#001f3f" />
+      <path d="M200 80 C180 120, 120 140, 150 200 C180 260, 220 260, 250 200 C280 140, 220 120, 200 80" fill="#006400" />
+      <g transform="translate(200,200) scale(0.6)">
+        <path d="M0-30 L5-30 L5-40 L15-40 L15-30 L20-30 L20-20 L30-20 L30-10 L20-10 L20-5 L30-5 L30 5 L20 5 L20 10 L30 10 L30 20 L20 20 L20 30 L15 30 L15 40 L5 40 L5 30 L0 30 L0 20 L-5 20 L-5 10 L-15 10 L-15 5 L-5 5 L-5 0 L-15 0 L-15 -10 L-5 -10 L-5 -15 L-15 -15 L-15 -25 L-5 -25 L-5 -30 Z" fill="#4a90e2" />
+      </g>
+      <g fill="#fff" transform="translate(120,260) scale(0.8)">
+        <circle cx="30" cy="-30" r="12" />
+        <rect x="24" y="-18" width="12" height="30" />
+        <circle cx="70" cy="-30" r="12" />
+        <rect x="64" y="-18" width="12" height="30" />
+        <circle cx="110" cy="-30" r="12" />
+        <rect x="104" y="-18" width="12" height="30" />
+      </g>
+      <g fill="#ffd700" transform="translate(120,230) scale(0.5)">
+        <polygon points="30,-50 34,-38 46,-38 36,-30 40,-18 30,-25 20,-18 24,-30 14,-38 26,-38" />
+        <polygon points="70,-50 74,-38 86,-38 76,-30 80,-18 70,-25 60,-18 64,-30 54,-38 66,-38" />
+        <polygon points="110,-50 114,-38 126,-38 116,-30 120,-18 110,-25 100,-18 104,-30 94,-38 106,-38" />
+      </g>
+    </svg>
+  </div>
+
+  <div id="app" class="app hidden">
+    <nav class="side-menu">
+      <ul>
+        <li><a href="#analytical-tools" class="menu-item active"><span class="icon">🔧</span>Analytical Tools</a></li>
+        <li><a href="#mapping" class="menu-item"><span class="icon">🗺️</span>Mapping</a></li>
+        <li><a href="#reports" class="menu-item"><span class="icon">📊</span>Reports</a></li>
+        <li><a href="#toolkit" class="menu-item"><span class="icon">🧰</span>Toolkit</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <section id="analytical-tools" class="page"><h2>Analytical Tools</h2></section>
+      <section id="mapping" class="page"><h2>Mapping</h2></section>
+      <section id="reports" class="page"><h2>Reports</h2></section>
+      <section id="toolkit" class="page">
+        <h2>Toolkit – Share Content</h2>
+        <ul id="toolkit-list"><li>Loading…</li></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
