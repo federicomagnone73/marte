@@ -25,7 +25,7 @@ menuLinks.forEach(l=>{
 
 /* Toolkit – WebDAV via public CORS proxy */
 const PROXY='https://cors-anywhere.herokuapp.com/';
-const BASE='https://nextcloud.lombardia.cisl.it/remote.php/dav/files/';
+const BASE='https://nextcloud.lombardia.cisl.it/public.php/webdav/';
 const TOKEN='nr6SDkTNxDoKe4B';
 function loadToolkit(){
   const url=`${PROXY}${BASE}${TOKEN}/`;
