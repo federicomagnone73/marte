@@ -1,7 +1,43 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <link rel="manifest" href="manifest.json" />
-  </head>
-  <body></body>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivio File Pubblici</title>
+    <!-- Tailwind CSS per una grafica moderna e veloce -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <div class="flex h-screen">
+        <!-- Sidebar / Menu Laterale -->
+        <div class="w-64 bg-slate-800 text-white p-5 flex flex-col justify-between">
+            <div>
+                <h1 class="text-xl font-bold mb-8 tracking-wide">File Cloud</h1>
+                <nav class="space-y-2">
+                    <a href="#" id="btn-public" class="flex items-center space-x-3 bg-blue-600 text-white p-3 rounded-lg font-medium transition">
+                        <span>📁 Cartella Pubblica</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="text-xs text-slate-400">Powered by Nextcloud</div>
+        </div>
+
+        <!-- Area Contenuto Principale -->
+        <div class="flex-1 p-10 overflow-y-auto">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">File Disponibili</h2>
+            
+            <!-- Stato di caricamento -->
+            <div id="loading" class="text-gray-500 font-medium">Caricamento file in corso...</div>
+
+            <!-- Griglia dei File (Inizialmente vuota) -->
+            <div id="files-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
+                <!-- I file verranno inseriti qui dal JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Il nostro script JS (Fase 4) andrà qui sotto -->
+    <script src="app.js"></script>
+</body>
 </html>
