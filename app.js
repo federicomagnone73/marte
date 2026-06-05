@@ -1,8 +1,9 @@
 // CONFIGURAZIONE (Sostituisci con i tuoi dati reali)
+const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
 const NEXTCLOUD_BASE_URL = 'https://nextcloud.lombardia.cisl.it'; // Senza slash finale
 const SHARE_TOKEN = 'nr6SDkTNxDoKe4B'; // Il token generato nella Fase 1
 
-const WEBDAV_URL = `${NEXTCLOUD_BASE_URL}/public.php/webdav/`;
+const WEBDAV_URL = `${PROXY_URL}${NEXTCLOUD_BASE_URL}/public.php/webdav/`;
 
 async function fetchPublicFiles() {
     const loadingEl = document.getElementById('loading');
