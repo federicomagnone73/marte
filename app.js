@@ -29,7 +29,7 @@ const BASE='https://nextcloud.lombardia.cisl.it/remote.php/dav/files/';
 const TOKEN='nr6SDkTNxDoKe4B';
 function loadToolkit(){
   const url=`${PROXY}${BASE}${TOKEN}/`;
-  fetch(url,{method:'PROPFIND',headers:{Depth:'1'}})
+  fetch(url,{method:'PROPFIND',headers:{Depth:'1','X-Requested-With':'XMLHttpRequest'}})
     .then(r=>{if(!r.ok)throw new Error('Network error');return r.text();})
     .then(t=>{
       const parser=new DOMParser();
