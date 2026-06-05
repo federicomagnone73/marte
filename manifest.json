@@ -1,16 +1,20 @@
 {
-  "manifest_version": 2,
-  "name": "MARTE",
-  "version": "0.1",
-  "author": "federico.magnone@gmail.com"
-  "default_locale": "it",
-  "description": "…",
-  "icons": {
-    "48": "icon.png",
-    "96": "icon@2x.png"
-  },
-  "start_url": ".",
+  "name": "TWIN‑EWC",
+  "short_name": "TWIN‑EWC",
+  "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "black",
-  "background_color": "white"
+  "background_color": "#001f3f",
+  "theme_color": "#001f3f",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
